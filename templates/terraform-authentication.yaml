@@ -1,9 +1,0 @@
-# azure-credentials-template.yaml
-
-steps:
-- script: |
-    echo "Setting Azure environment variables"
-    export ARM_SUBSCRIPTION_ID="6387d15d-9dfe-46a9-ad50-c7c41765e187"
-    export ARM_TENANT_ID="165f302c-cbde-4129-9008-b820a8053b38"
-    export ARM_CLIENT_ID="11f86d76-7b39-4ea4-a633-f9e38f542d9e"
-    export ARM_CLIENT_SECRET="5B-8Q~.Y.cwpUfxdRBeEk6jaVkiBZOBVFveM_anT"

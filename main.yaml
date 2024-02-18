@@ -12,15 +12,3 @@ stages:
       vmImage: 'ubuntu-latest'
     steps:
     - template: templates/terraform-install.yaml
-
-  - job: set_env_variables
-    pool:
-      vmImage: 'ubuntu-latest'
-    steps:
-    - template: templates/terraform-authentication.yaml
-
-  - job: run_terraform_to_deploy
-    pool:
-      vmImage: 'ubuntu-latest'
-    steps:
-    - template: templates/terraform-Run.yaml
