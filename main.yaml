@@ -7,17 +7,14 @@ trigger:
 stages:
 - stage:
   jobs:
-  - job:
-    name: Install Terraform
+  - job: Install Terraform
     steps:
     - template: templates/terraform-install.yaml
 
-  - job:
-    name: set env variables
+  - job: set env variables
     steps:
     - template: templates/terraform-authentication.yaml
 
-  - job:
-    name: Run terraform to deploy
+  - job: Run terraform to deploy
     steps:
     - template: templates/terraform-Run.yaml
