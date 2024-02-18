@@ -1,0 +1,29 @@
+stages:
+  stage:
+  jobs:
+  - job:
+    name: Clone repo
+    steps:
+    - checkout: self
+
+  - job:
+    name: navigate to repo
+    steps: 
+    - script: cd AZURE/terraform-config
+
+  - job:
+    name: run terraform init
+    steps:
+    - script: terraform init
+
+  - job:
+    name: run terraform plan
+    steps:
+    - script: terraform plan
+
+  - job:
+    name: run terraform apply
+    steps:
+    - script: terraform apply
+   
+   
