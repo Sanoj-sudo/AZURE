@@ -1,6 +1,4 @@
-steps:
-
-- task: TerraformInstaller@2
-  displayName: 'Install Terraform'
-   inputs:
-    terraformVersion: latest
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
