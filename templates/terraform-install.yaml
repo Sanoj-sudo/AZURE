@@ -1,6 +1,4 @@
-# terraform-install.yaml
-
-- task: TerraformInstaller@2
-  displayName: 'Install Terraform'
+task: TerraformInstaller@2
+displayName: 'Install Terraform'
   inputs:
     terraformVersion: latest
