@@ -1,6 +1,5 @@
 # terraform-install.yaml
 
-steps:
 - task: TerraformInstaller@2
   displayName: 'Install Terraform'
   inputs:
