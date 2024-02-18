@@ -1,10 +1,7 @@
-stages:
-  stage:
-  jobs:
-  - job:
-    name: Install terraform
-    steps:
-    - task: TerraformInstaller@2
-      displayName: install terraform
-      inputs:
-        terraformVersion: latest
+# terraform-install.yaml
+
+steps:
+- task: TerraformInstaller@2
+  displayName: 'Install Terraform'
+  inputs:
+    terraformVersion: latest

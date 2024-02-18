@@ -1,29 +1,13 @@
-stages:
-  stage:
-  jobs:
-  - job:
-    name: Clone repo
-    steps:
-    - checkout: self
+# terraform-stages-template.yaml
 
-  - job:
-    name: navigate to repo
-    steps: 
-    - script: cd AZURE/terraform-config
+steps:
+- checkout: self
 
-  - job:
-    name: run terraform init
-    steps:
-    - script: terraform init
+- script: |
+    cd AZURE/terraform-config
+    terraform init
 
-  - job:
-    name: run terraform plan
-    steps:
-    - script: terraform plan
+- script: terraform plan
 
-  - job:
-    name: run terraform apply
-    steps:
-    - script: terraform apply
-   
+- script: terraform apply
    
