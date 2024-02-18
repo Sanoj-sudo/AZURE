@@ -7,19 +7,19 @@ trigger:
 stages:
 - stage:
   jobs:
-  - job: Install Terraform
+  - job: install_terraform
     pool:
       vmImage: 'ubuntu-latest'
     steps:
     - template: templates/terraform-install.yaml
 
-  - job: set env variables
+  - job: set_env_variables
     pool:
       vmImage: 'ubuntu-latest'
     steps:
     - template: templates/terraform-authentication.yaml
 
-  - job: Run terraform to deploy
+  - job: run_terraform_to_deploy
     pool:
       vmImage: 'ubuntu-latest'
     steps:
