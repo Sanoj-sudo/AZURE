@@ -1,4 +1,6 @@
-task: TerraformInstaller@2
-displayName: 'Install Terraform'
-  inputs:
-    terraformVersion: latest
+steps:
+
+- task: TerraformInstaller@2
+  displayName: 'Install Terraform'
+    inputs:
+      terraformVersion: latest
